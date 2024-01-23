@@ -1,12 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>www.hockeyssports.com</title>
-    
+    <link rel="shortcut icon" href="Images/favicon.png" type="image/x-icon">
+    <!-- Tailwind & Daisy UI Styles Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font Manrope Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="font-manrope">
+    <!-- Header Section Starts Here -->
+    <header class="container mx-auto mt-4">
+        <!-- Navbar Section Starts Here -->
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 space-y-4">
+                            <li><a>Home</a></li>
+                            <li><a>Service</a></li>
+                            <li><a>Cases</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-xl">
+                        <h2 class="text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</h2>
+                    </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+                        <li><a class="hover:text-[#FF4240]">Home</a></li>
+                        <li><a class="hover:text-[#FF4240]">Service<img class="rounded-full" src="images/Frame.jpg"
+                                    alt=""></a></li>
+                        <li><a class="hover:text-[#FF4240]">Cases<img class="rounded-full" src="images/Frame.jpg"
+                                    alt=""></a></li>
+                        <li><a class="hover:text-[#FF4240]">Blog<img class="rounded-full" src="images/Frame.jpg"
+                                    alt=""></a></li>
+                        <li><a class="hover:text-[#FF4240]">Contact Us<img class="rounded-full" src="images/Frame.jpg"
+                                    alt=""></a></li>
+
+                    </ul>
+                </div>
+                <div class="navbar-end space-x-3">
+                    <img src="Images/search.jpg" alt="">
+                    <a class="btn text-xl bg-[#FF4240] text-white mr-4 lg:mr-0 ">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- Navbar Section Ends Here -->
+
+        <!-- Banner Section Starts Here -->
+        <section class=" mt-8  rounded-lg">
+            <div class="mt-12">
+                <div class="carousel w-full">
+                    <div id="slide1"
+                        class="carousel-item relative  rounded-lg w-full bg-auto bg-no-repeat bg-center lg:bg-cover h-[70vh]   bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner1.png)] flex items-center justify-center">
+                        <div class="absolute flex  transform -translate-y-1/2  gap-3  left-50 bottom-5 lg:left-10 lg:bottom-5">
+                            <a href="#slide4" class="btn btn-circle  lg:text-2xl border-0 text-white bg-black">❮</a>
+                            <a href="#slide2" class="btn btn-circle lg:text-2xl border-0 text-white bg-black">❯</a>
+                        </div>
+                    </div>
+
+
+                    <div id="slide2"
+                        class="carousel-item relative rounded-lg w-full bg-auto bg-no-repeat bg-center lg:bg-cover h-[70vh]  bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner2.jpg)] flex items-center justify-center">
+                        <div class="absolute flex  transform -translate-y-1/2  gap-3 left-50 bottom-5 lg:left-10 lg:bottom-5">
+                            <a href="#slide1" class="btn btn-circle lg:text-2xl border-0 text-black bg-white">❮</a>
+                            <a href="#slide3" class="btn btn-circle lg:text-2xl border-0 text-black bg-white">❯</a>
+                        </div>
+                    </div>
+                    <div id="slide3"
+                        class="carousel-item relative rounded-lg w-full  bg-no-repeat bg-center bg-cover  h-[70vh]  bg-[linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/banner3.jpg)] flex items-center justify-center ">
+
+                        <div class="absolute flex  transform -translate-y-1/2  gap-3 left-50 bottom-5 lg:left-10 lg:bottom-5">
+                            <a href="#slide2" class="btn btn-circle lg:text-2xl border-0 text-white bg-black">❮</a>
+                            <a href="#slide1" class="btn btn-circle lg:text-2xl border-0 text-white bg-black">❯</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div
+                    class="h-40 lg:w-2/5 flex flex-col  text-white text-left  justify-center px-10 lg:-translate-y-48 lg:translate-x-2/3 mx-auto rounded-lg bg-[#131318] shadow-lg">
+                    <h1 class="text-2xl font-extrabold">Meet all the heroes from the field</h1>
+                    <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna
+                        in sit nullam proin. </p>
+                </div>
+            </div>
+
+        </section>
+        <!-- Banner Section Ends Here -->
+    </header>
+    <!-- Header Section Ends Here -->
+
+
+
+
+
 </body>
+
 </html>
